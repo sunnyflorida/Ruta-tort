@@ -116,6 +116,10 @@ mark {
 	font-weight: bold;
 	display: inline-block;
 	margin: 15px 0;
+	width: 100%;
+}
+p {
+	text-align: justify;
 }
 /* Footer */
 .well {
@@ -204,3 +208,6 @@ background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0
 .thumbnail .caption p {
 	color: rgb(117,10,0);
 }
+
+
+
