@@ -97,7 +97,7 @@ nav .collapse .dropdown .dropdown-menu a {
 
 /* Text*/
 
-h2 {
+h2, h3 {
 	color: rgb(183,0,108);
 }
 h4 {
@@ -181,10 +181,17 @@ address a:hover {
  	text-decoration: underline;
  }
 /* Opinions*/
-.media .media-body p {
+.media .media-body p,
+ .opinion p {
 	background-color: rgb(248,200,222);
-	border: none;
+	border: 1px solid rgba(180,1,101,0.2);
+	border-radius: 10px;
+	padding: 15px;
 	clear: both;
+}
+.media-heading {
+	color: inherit;
+	padding-left: 15px;
 }
 
 /* Carousel*/
