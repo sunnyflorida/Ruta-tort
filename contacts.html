@@ -12,8 +12,7 @@
     <link href="css/bootstrap-social.css" rel="stylesheet">
 
     <link href="css/style.css" rel="stylesheet">
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/holder.js"></script>
+   
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -90,28 +89,94 @@
 
 
 
-      <div class="row">  
-        <div class="col-xs-12 col-sm-6 col-md-7 col-lg-8">
-          <h2>Контакты</h2>
+      <div class="row contacts">  
+        <div class="col-lg-4">
+             <h3>Задайте нам вопрос:</h3>
+          <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <div class="col-sm-10">
+                <input type="email" class="form-control" placeholder="Введите имя">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-10">
+                <input type="email" class="form-control" placeholder="Введите телефон">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-10">
+                <input type="password" class="form-control" placeholder="Введите email">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-10">
+                <textarea placeholder="Введите Ваше сообщение" class="form-control" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Отправить</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-lg-4">
+          <h3>Наши контакты</h3>
           <address>
-            <strong>Адрес:</strong> г. Минск, ул. Тимирязева, 67<br>
-             <strong>Тел.</strong> +375 29 637 0 337<br>
-            <strong>Тел.</strong> +375 29 237 0 367<br>
-          </address>
-          <address>
-            <a href="mailto:#"><strong>E-mail:</strong> support@intrellectit.by</a><br>
-            <strong>Время работы:</strong>пн-вс 9:00-21:00<br>
+            <p><span class="glyphicon glyphicon-map-marker">&nbsp</span>
+                <strong>Адрес:</strong> г. Минск, ул. Семашко, 5
+                  </p>
+            <p><span class="glyphicon glyphicon-phone-alt">&nbsp</span>
+              <strong>Тел.</strong> 
+              <a href="callto: +375291474752">+375 29 147 47 52</a>
+                  </p>
+            <p><span class="glyphicon glyphicon-phone">&nbsp</span>
+              <strong>Тел.</strong> 
+              <a href="callto: +375447116736">+375 44 711 67 36</a>
+                </p>
+            <p><span class="glyphicon glyphicon-envelope">&nbsp</span>
+              <strong>E-mail:</strong> list@n1.by
+                </p>
+            <p><span class="glyphicon glyphicon-calendar">&nbsp</span>
+              <strong>Время работы:</strong>пн-вс 9:00-21:00</p>
           </address>
         </div>
+
+        <div class="col-lg-4">
+          <h3>Схема проезда</h3>
+            <img src="ico/map.png" data-toggle="modal" data-target=".bs-example-modal-lg">
+            <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <img src="ico/map.png">
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+
+      
+      
+
+
+
+
+
+
+
+
       </div>
 
 
-
+  </div>  <!-- container -->
+     
       <!-- map -->
-        <div class="container">
-          <div id="mapDiv"></div>
+        <div class="container map">
+          <div id="map-canvas"></div>
         </div>
-    </div>  <!-- container -->
+  
 
     <!-- footer -->
     <footer class="well well-lg ">
@@ -148,33 +213,8 @@
     </footer>
     <!-- footer -->
     <script src="js/jquery-1.11.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-   <script src="js/bootstrapmap.min.js"></script>
     <script src="js/holder.js"></script>
-    <!-- Step 3. Add JS to load the responsive map -->
-    <script>
-        var package_path = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/'));
-        var dojoConfig = {
-            packages: [{
-                name: "application",
-                location: package_path + '/js'
-            }, {
-                name: "bootstrap",
-                location: "//rawgit.com/xsokev/Dojo-Bootstrap/master"
-            }]
-        };
-    </script>
-    <script src="http://js.arcgis.com/3.10compact"></script>
-    <script>
-        require(["esri/map", "application/bootstrapmap", "dojo/domReady!"], 
-          function(Map, BootstrapMap) {
-            // Get a reference to the ArcGIS Map class
-            var map = BootstrapMap.create("mapDiv",{
-              basemap:"national-geographic",
-              center:[-122.45,37.77],
-              zoom:12
-            });
-        });
-    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>

@@ -121,6 +121,8 @@ mark {
 p {
 	text-align: justify;
 }
+
+
 /* Footer */
 .well {
 	padding: 0;
@@ -158,6 +160,8 @@ address a:hover {
 	color: rgb(180,1,101);
 	text-decoration: none;
 }
+
+
 /* Header*/
  body .container > header a img {
  	height: 210px;
@@ -170,6 +174,7 @@ address a:hover {
  	width: 100%;
  }
 
+
  /* Breadcrump*/
 .breadcrumb {
  	background-color: rgb(248,200,222);
@@ -180,6 +185,10 @@ address a:hover {
  .breadcrumb a:hover {
  	text-decoration: underline;
  }
+
+
+
+
 /* Opinions*/
 .media .media-body p,
  .opinion p {
@@ -210,11 +219,52 @@ background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0
 .thumbnail .caption a,
 .thumbnail .caption h3 {
 	color: rgb(180,1,101);
-	text-decoration: none;
 }
+.thumbnail .caption h3 {
+	margin-top: 10px;
+	height: 45px;
+} 
 .thumbnail .caption p {
 	color: rgb(117,10,0);
 }
+.inside_stuff img {
+	width: 100%;
+}
+.examples div .thumbnail {
+	height: 410px;
+}
+table tr {
+	border-bottom: 1px solid #777;
+}
+table tr td {
+	padding: 10px;
+}
+table tr td:first-child {
+	font-weight: bold;
+	font-size: 18px;
+}
 
+/* Map*/
 
+#map-canvas {
+	width: 100%;
+	height: 500px;
+}
+.container.map {
+	padding: 0;
+}
 
+/* Contacts */
+.contacts address {
+	font-size: 18px;
+}
+.contacts address span {
+	font-size: 22px;
+}
+.contacts address p {
+	padding-top: 7px;
+}
+.contacts div:last-child img {
+	width: 100%;
+	cursor: pointer;
+};
