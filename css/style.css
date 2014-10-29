@@ -196,3 +196,11 @@ background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0
 
 
 /* Products */
+.thumbnail .caption a,
+.thumbnail .caption h3 {
+	color: rgb(180,1,101);
+	text-decoration: none;
+}
+.thumbnail .caption p {
+	color: rgb(117,10,0);
+}
